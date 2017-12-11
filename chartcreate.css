@@ -1,0 +1,17 @@
+td{
+    height:15px;
+    width: 20px;
+}
+
+table{
+    width: auto !important;
+}
+
+.main{
+    background-color: white;
+}
+
+.contrast1{
+    background-color: black;
+}
+
