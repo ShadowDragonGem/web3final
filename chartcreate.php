@@ -17,6 +17,16 @@
             
         }
         
+        function includes(){
+            echo "<script src=\"ChartEdit.js\"></script>\n";
+            echo"<link rel=\"stylesheet\" href=\"chartcreate.css\">";
+        }
+        
+        function head(){
+            parent::head();
+            $this->addHead($this->includes());
+        }
+        
         function chartManip(){
             $html=<<<END
 <div class="container" >
