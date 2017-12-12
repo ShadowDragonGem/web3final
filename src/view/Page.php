@@ -60,8 +60,11 @@ END;
         $this->title();
         echo "<meta charset=\"utf-8\">\n";
         $this->bootstrapIncludes();
-        echo"<link rel=\"stylesheet\" href=\"chartcreate.css\">";
-        echo "<script src=\"ChartEdit.js\"></script>\n";
+        foreach($this->headParts as $part){
+            $part->generate();
+        }
+        
+        
         echo "</head>\n";
                 
     }
